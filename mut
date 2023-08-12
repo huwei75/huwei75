@@ -1,0 +1,7 @@
+struct Point (i32, f64);
+ 
+fn main() {
+	let mut point = Point(10, 20.0); 
+	point.0 = 5;
+    println!("({},{})", point.0, point.1);  
+}
