@@ -1,0 +1,16 @@
+void init()
+{
+	initgraph(WIN_WINDTH, WIN_HEIGHT);
+
+    char name[64];
+    
+    //Load background resources
+    for (int i = 0;i < 3;i++)
+        
+    {
+        
+        sprintf(name,"res/bg%03d.png",i+1);//generate file name
+         //loadimage(&imgBgs[i],"file name");
+        loadimage(&imgBgs[i],name);
+        bgX[i] = 0;
+    }
